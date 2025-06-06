@@ -2,5 +2,6 @@
 
 class Shape {
 public:
-	virtual void Attack() = 0;
+	virtual void Size() = 0;
+	virtual void Draw() = 0;
 };
