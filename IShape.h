@@ -1,5 +1,6 @@
 #pragma once
 
+// ƒˆ‰¼‘zŠÖ”
 class Shape {
 public:
 	virtual void Size() = 0;

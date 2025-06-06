@@ -9,7 +9,9 @@ public:
 
 	void Size() override;
 	void Draw() override;
+	// îºåa
 	float radius = 5.1f;
+	// ñ êœ
 	float size;
 private:
 };

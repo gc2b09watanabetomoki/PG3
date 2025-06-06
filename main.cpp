@@ -3,17 +3,24 @@
 #include "Rectangle.h"
 
 int main() {
+	Shape* shape[2];
 
-	Circle* circle;
-	circle = new Circle;
-	Rectangle* rectangle;
-	rectangle = new Rectangle;
+	for (int i = 0; i < 2; i++) {
+		if (i < 1) {
+			shape[i] = new Circle;
+		} else {
+			shape[i] = new Rectangle;
+		}
+	}
 
-	circle->Size();
-	circle->Draw();
+	// ä÷êîÇÃé¿çs
+	for (int i = 0; i < 2; i++) {
+		shape[i]->Size();
+		shape[i]->Draw();
+	}
 
-	rectangle->Size();
-	rectangle->Draw();
-
+	for (int i = 0; i < 2; i++) {
+		delete shape[i];
+	}
 	return 0;
 }
